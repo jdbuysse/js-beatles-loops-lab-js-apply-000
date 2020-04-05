@@ -9,11 +9,12 @@ function theBeatlesPlay(musicians, instruments) {
 
 function johnLennonFacts(facts) {
   var n = facts.length; //if let doesn't work with scope just try var
+  var result = [];
   while (n < 1) {
-    facts[n] = facts[n] + "!!!";
+    result.push(facts[n] + "!!!");
     n--
   }
-  return facts;
+  return result;
 }
 
 function iLoveTheBeatles(n) {
