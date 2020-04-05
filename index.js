@@ -4,12 +4,14 @@ function theBeatlesPlay(musicians, instruments) {
   for (let i = 0; i < musicians.length; i++) {
     result.push(musicians[i] + " plays " + instruments[i]);
   }
+  return result
 }
 
 function johnLennonFacts(facts) {
-  let n = facts.length; //if let doesn't work with scope just try var
+  var n = facts.length; //if let doesn't work with scope just try var
   while (n < 1) {
     facts[n] = facts[n] + "!!!";
+    n--
   }
   return facts;
 }
